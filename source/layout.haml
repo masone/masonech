@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+      %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+
+        = stylesheet_link_tag 'site.css'
+        = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js', 'site.js'
+        = yield_content :head
+
+  %body{:class => page_classes}
+  
+    #container
+      .line
+        .main
+          \&nbsp;
+        .sidebar.logo
+          %h1= link_to 'http://masone.ch', 'Christian Felder', :id => 'logo'
+          %p
+            web app developer, entrepreneur, 
+            %br/
+            analogue photographer, glider pilot
+      .line
+        .main
+          = yield
+        .sidebar        
+          \&nbsp;      
+      
+    
