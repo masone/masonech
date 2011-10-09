@@ -1,3 +1,5 @@
+task :default => 'build_and_deploy'
+
 desc 'Deploys the build to gh-pages'
 task :deploy do
   puts 'Commit message:'
