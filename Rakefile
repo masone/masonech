@@ -5,8 +5,8 @@ task :deploy do
   puts 'Commit message:'
   message = STDIN.gets.chomp
   puts "Deploying ..."
-  `cd build; echo 'cfelder.com' > CNAME; git add .; git commit -am '#{message}'; git push`
-  `git add .; git commit -am '#{message}'; git push`
+  `cd build; echo 'cfelder.com' > CNAME; git add .; git commit -am '#{message}'; git push origin gh-pages`
+  `git add .; git commit -am '#{message}'; git push origin master`
 end
 
 desc 'Builds the html'
