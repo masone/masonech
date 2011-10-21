@@ -6,19 +6,20 @@ jQuery(function($){
 		autoplay: false,
 		keyboard_nav: false,
 		slideshow: false,
-		fit_portrait: true,
-		fit_landscape: false
+		vertical_center: false
 	});
-	$supersized = $('#supersized');
+	$supersized_img = $('#supersized img');
+	$supersized_img.hide();
 	$main = $('.main .part');
+	$main_height = 
 
 	$('#logo').mouseover(function(){
-		$supersized.fadeIn(200);
+		$supersized_img.fadeIn(200);
 		$main.fadeOut(150);
 	});
-
+	
 	$('#logo').mouseout(function(){
-		$supersized.fadeOut(200);
+		$supersized_img.fadeOut(200);
 		$main.fadeIn(150);
 	});	
 	

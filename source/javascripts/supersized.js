@@ -19,7 +19,7 @@
 		
 		//Default settings
 		var settings = {
-      		start_slide				:	1,		//Start slide (0 is random) //Requires multiple background images
+      start_slide				:	1,		//Start slide (0 is random) //Requires multiple background images
 			vertical_center         :   1,		//Vertically center background
 			horizontal_center       :   1,		//Horizontally center background
 			min_width		        :   0,		//Min width allowed (in pixels)
@@ -57,8 +57,8 @@
 		//Display image once page has loaded
 		$(window).load(function(){
 		
-			$('#supersized-loader').hide();		//Hide loading animation
-			//element.fadeIn('fast');				//Fade in background
+			//$('#supersized-loader').hide();		//Hide loading animation
+			element.fadeIn('fast');				//Fade in background
 			
 			resizenow();
 			
