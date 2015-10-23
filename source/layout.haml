@@ -12,14 +12,14 @@
 
     %link{:href => "http://www.myopenid.com/server", :rel => "openid.server"}/
     %link{:href => "http://masone.myopenid.com/", :rel => "openid.delegate"}/
-    %link{:href => "/images/favicon.ico", :rel => "shortcut icon"}/        	
+    %link{:href => "/images/favicon.ico", :rel => "shortcut icon"}/
 
     = stylesheet_link_tag 'site.css'
     = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js', 'site.js'
     = yield_content :head
 
   %body{:class => page_classes}
-  
+
     #container
       .line
         .main
@@ -27,16 +27,16 @@
         .sidebar.logo
           %h1= link_to 'http://masone.ch', 'Christian Felder', :id => 'logo'
           %p
-            web app developer, entrepreneur, 
+            developer, analogue photographer,
             %br/
-            analogue photographer, glider pilot
+            ramen lover, glider pilot
       .line
         .main
           = yield
-        .sidebar        
-          \&nbsp;      
-      
-        
+        .sidebar
+          \&nbsp;
+
+
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-666008-4']);
