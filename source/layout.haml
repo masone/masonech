@@ -8,14 +8,11 @@
 
     %meta{:content => "INDEX,FOLLOW", :name => "robots"}/
     %meta{:content => "web app developer, entrepreneur, analogue photographer, glider pilot", :name => "description"}/
-    %meta{:content => "masone, christian, felder, lomography, programming, ruby, rails, graffiti", :name => "keywords"}/
+    %meta{:content => "masone, christian, felder, lomography, programming, ruby, rails, node, javascript, graffiti", :name => "keywords"}/
 
-    %link{:href => "http://www.myopenid.com/server", :rel => "openid.server"}/
-    %link{:href => "http://masone.myopenid.com/", :rel => "openid.delegate"}/
     %link{:href => "/images/favicon.ico", :rel => "shortcut icon"}/
 
     = stylesheet_link_tag 'site.css'
-    = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js', 'site.js'
     = yield_content :head
 
   %body{:class => page_classes}
@@ -25,7 +22,7 @@
         .main
           \&nbsp;
         .sidebar.logo
-          %h1= link_to 'http://masone.ch', 'Christian Felder', :id => 'logo'
+          %h1 Christian Felder
           %p
             developer, analogue photographer,
             %br/
