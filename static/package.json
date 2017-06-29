@@ -1,0 +1,12 @@
+{
+  "name": "masonech.now.sh",
+  "version": "1.0.0",
+  "now": {
+    "name": "masonech",
+    "alias": [
+      "cfelder.com",
+      "masone.ch"
+    ],
+    "forwardNpm": false
+  }
+}
